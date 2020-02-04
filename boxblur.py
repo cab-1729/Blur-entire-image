@@ -1,7 +1,6 @@
 from PIL import Image
 import sys
 from itertools import product
-chdir('C:\\Users\\Lenovo\\Desktop\\env')
 original=Image.open(sys.argv[1])
 new_image=Image.new('RGB',original.size)
 def pix_avg(pixes):
