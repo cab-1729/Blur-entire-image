@@ -6,5 +6,5 @@ the old image and the new image are to sent  in the command line along witht the
 
 syntax
 '''
-python blur.py originalimage.png newimage.png 20
+ blur originalimage.png newimage.png 20
 '''
