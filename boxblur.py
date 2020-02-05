@@ -14,7 +14,7 @@ def pix_avg(pixes):
 def pix_rms(pixes):
     pass
 width,height=original.size
-factor=sys.argv[3]
+factor=int(sys.argv[3])
 wpix=[];hpix=[]
 t=[]
 for i in range(width):
