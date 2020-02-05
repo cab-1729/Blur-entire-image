@@ -14,7 +14,7 @@ def pix_avg(pixes):
 def pix_rms(pixes):
     pass
 width,height=original.size
-line_length=sys.argv[3]
+line_length=int(sys.argv[3])
 lines=[];t=[]
 for i in range(width):
     t.append(i)
