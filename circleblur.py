@@ -3,7 +3,7 @@ from PIL import Image
 from itertools import product
 import sys
 class Circle:
-    radius=sys.argv[3]
+    radius=int(sys.argv[3])
     diameter=2*radius
     @staticmethod
     def pix_avg(pixes):
