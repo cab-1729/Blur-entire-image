@@ -6,5 +6,7 @@ the old image and the new image are to sent  in the command line along witht the
 
 syntax
 '''
- blur originalimage.png newimage.png 20
+ blur originalimage.png newimage.png degree
 '''
+
+see the images for examples of degrees and get the exe files at the Image blur repository to use without any dependencies on windows
