@@ -5,8 +5,8 @@ original=Image.open(sys.argv[1])
 new_image=Image.new('RGB',original.size)
 width,height=original.size
 da=sys.argv[3]
-if da.count('-')!=2:
-    degree=tuple(repeat(int(da)))
+if da.count('-')==0:
+    degree=tuple(repeat(int(da),3))
 else:
     degree=tuple([int(i) for i in da.split('-')])
 def color_pix(pixes,color):
@@ -41,4 +41,7 @@ def sort_pixels(address,color):
 for_each_pixel(sort_pixels)
 for cutout in categories.values():
     color_pix(cutout['positions'],pix_avg(cutout['colors']))
-new_image.save(sys.argv[2])
+if len(sys.argv)==5:#give borders to sections
+    pass
+
+new_image.save(sys.argv[2])#saving new image
